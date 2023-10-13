@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -20,9 +21,27 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th{
+
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+        }
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
         }
 
         td.numero{
@@ -36,6 +55,7 @@
    <!--
     ANATOMIA PARA TABELAS GRANES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -44,9 +64,10 @@
             TR, TD, TH
    -->
   <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
-         <th>Estado</th>
-         <th>População</th>
+         <th scope="col">Estado</th>
+         <th scope="col" style="width: 50px;">População</th>
     </thead>
     <tbody>
        <tr>
@@ -161,10 +182,36 @@
     </tbody>
     <tfoot>
       <tr>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="numero"><strong>203.062.512</strong></td>
       </tr>
     </tfoot>
   </table>
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sequi illo inventore? Nulla cumque voluptatum ducimus saepe sit nemo velit, commodi incidunt, culpa tempore in sed? Nam, assumenda at! Quasi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio consequatur rem mollitia. Mollitia eum tenetur esse, aliquid temporibus minima odit officiis ipsum vel tempora aut voluptatibus recusandae sed adipisci. Velit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero vitae est maiores illum voluptate fugiat, assumenda magnam id accusantium quaerat obcaecati nemo exercitationem, a dicta eius. Debitis, iusto suscipit!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, similique commodi? Mollitia ipsum, odio totam sequi doloribus nemo non beatae autem explicabo voluptates porro laudantium, temporibus quod dolor, sint possimus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt excepturi magnam at odio cum tempora fuga iste? Quia, deserunt! Doloribus nemo molestiae aut incidunt molestias tenetur totam quod iste!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sequi illo inventore? Nulla cumque voluptatum ducimus saepe sit nemo velit, commodi incidunt, culpa tempore in sed? Nam, assumenda at! Quasi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio consequatur rem mollitia. Mollitia eum tenetur esse, aliquid temporibus minima odit officiis ipsum vel tempora aut voluptatibus recusandae sed adipisci. Velit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero vitae est maiores illum voluptate fugiat, assumenda magnam id accusantium quaerat obcaecati nemo exercitationem, a dicta eius. Debitis, iusto suscipit!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, similique commodi? Mollitia ipsum, odio totam sequi doloribus nemo non beatae autem explicabo voluptates porro laudantium, temporibus quod dolor, sint possimus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt excepturi magnam at odio cum tempora fuga iste? Quia, deserunt! Doloribus nemo molestiae aut incidunt molestias tenetur totam quod iste!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sequi illo inventore? Nulla cumque voluptatum ducimus saepe sit nemo velit, commodi incidunt, culpa tempore in sed? Nam, assumenda at! Quasi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio consequatur rem mollitia. Mollitia eum tenetur esse, aliquid temporibus minima odit officiis ipsum vel tempora aut voluptatibus recusandae sed adipisci. Velit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero vitae est maiores illum voluptate fugiat, assumenda magnam id accusantium quaerat obcaecati nemo exercitationem, a dicta eius. Debitis, iusto suscipit!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, similique commodi? Mollitia ipsum, odio totam sequi doloribus nemo non beatae autem explicabo voluptates porro laudantium, temporibus quod dolor, sint possimus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt excepturi magnam at odio cum tempora fuga iste? Quia, deserunt! Doloribus nemo molestiae aut incidunt molestias tenetur totam quod iste!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sequi illo inventore? Nulla cumque voluptatum ducimus saepe sit nemo velit, commodi incidunt, culpa tempore in sed? Nam, assumenda at! Quasi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio consequatur rem mollitia. Mollitia eum tenetur esse, aliquid temporibus minima odit officiis ipsum vel tempora aut voluptatibus recusandae sed adipisci. Velit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero vitae est maiores illum voluptate fugiat, assumenda magnam id accusantium quaerat obcaecati nemo exercitationem, a dicta eius. Debitis, iusto suscipit!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, similique commodi? Mollitia ipsum, odio totam sequi doloribus nemo non beatae autem explicabo voluptates porro laudantium, temporibus quod dolor, sint possimus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt excepturi magnam at odio cum tempora fuga iste? Quia, deserunt! Doloribus nemo molestiae aut incidunt molestias tenetur totam quod iste!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab sequi illo inventore? Nulla cumque voluptatum ducimus saepe sit nemo velit, commodi incidunt, culpa tempore in sed? Nam, assumenda at! Quasi?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio consequatur rem mollitia. Mollitia eum tenetur esse, aliquid temporibus minima odit officiis ipsum vel tempora aut voluptatibus recusandae sed adipisci. Velit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vero vitae est maiores illum voluptate fugiat, assumenda magnam id accusantium quaerat obcaecati nemo exercitationem, a dicta eius. Debitis, iusto suscipit!
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, similique commodi? Mollitia ipsum, odio totam sequi doloribus nemo non beatae autem explicabo voluptates porro laudantium, temporibus quod dolor, sint possimus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt excepturi magnam at odio cum tempora fuga iste? Quia, deserunt! Doloribus nemo molestiae aut incidunt molestias tenetur totam quod iste!
+  </p>
 </body>
 </html>
